@@ -12,7 +12,6 @@ function solution(board, moves) {
           }
       }
   });
-  console.log(result);
   return result;
 }
 
