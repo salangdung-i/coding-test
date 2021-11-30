@@ -17,3 +17,17 @@ solution1(array, commands);
 console.log('result : [5, 6, 3]');
 
 
+function solution1(array, commands) {
+  return console.log(commands.map(command => {
+    const [sPosition, ePosition, position] = command;
+
+    const newArray = array
+      .filter((_, fIndex) => fIndex >= sPosition - 1 && fIndex <= ePosition - 1)
+      .sort((a, b) => a - b);
+    // fIndex => 처리할 현재요소의 인텍스 
+
+    console.log(newArray[position - 1]);
+
+    return newArray[position - 1];
+  }));
+}
