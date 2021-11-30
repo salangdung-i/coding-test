@@ -1,10 +1,7 @@
 function solution(participant, completion) {
-  participant.sort();
-  completion.sort();
-  for (var i = 0; i < participant.length; i++) {
-    if (participant[i] !== completion[i]) {
-      participant[i];
-    }
+  for (let i = 0; i < participant.length; i++) {
+    if (!completion.includes(participant[i]))
+      return console.log(participant[i]);
   }
 }
 
@@ -13,4 +10,4 @@ const completion = ["stanko", "ana", "mislav"];
 
 
 solution(participant, completion);
-console.log("result : mislav");
+console.log("result : leo");
