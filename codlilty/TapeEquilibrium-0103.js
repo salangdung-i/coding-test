@@ -24,7 +24,7 @@ function solution2(A) {
   let leftSum = A[0];
 
   let diff;
-  let minDiff = 0;
+  let minDiff = Number.MAX_SAFE_INTEGER;
 
 
   for (let P = 1; P < N; P++) {
