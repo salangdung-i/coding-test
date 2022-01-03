@@ -26,8 +26,7 @@ function solution(N) {
 
 function solution2(N) {
   let binary = N.toString(2);
-  let trimmed = binary.substr(0, binary.lastIndexOf('1') + 1);
-  return Math.max(...(trimmed.split('1').map(item => item.length)));
+  return Math.max(...(binary.split('1').map(item => item.length)));
 }
 
 
