@@ -26,19 +26,4 @@ function solution(S, P, Q) {
 
 console.log(solution(S, P, Q));
 
-  // for (i in S) {
-  //   switch (S[i]) {
-  //     case 'A':
-  //       arr.push(1);
-  //       break;
-  //     case 'C':
-  //       arr.push(2);
-  //       break;
-  //     case 'G':
-  //       arr.push(3);
-  //       break;
-  //     case 'T':
-  //       arr.push(4);
-  //       break;
-  //   }
 
